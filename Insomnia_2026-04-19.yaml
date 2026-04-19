@@ -1,0 +1,438 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_6af2c3e3ce954303b4a99b1aa69c724b
+  created: 1765179176684
+  modified: 1765179176684
+  description: ""
+collection:
+  - name: My Folder
+    meta:
+      id: fld_df094a555318478ca5e3b82a1373194a
+      created: 1765189131264
+      modified: 1765280137534
+      sortKey: -1765189131264
+      description: ""
+  - name: SQL SERVER
+    meta:
+      id: fld_ddd9b16603ea4025bfaa804c0bd6b984
+      created: 1765280145826
+      modified: 1765280183731
+      sortKey: -1765280145826
+      description: ""
+  - name: Lombok
+    meta:
+      id: fld_f523d09c25f843429bedabd72d07c224
+      created: 1765790414558
+      modified: 1767330546972
+      sortKey: -1765790414559
+      description: ""
+  - name: Filter-Interceptor
+    meta:
+      id: fld_a22d88b780e24f4680950f2efe49b595
+      created: 1767330556684
+      modified: 1767877587256
+      sortKey: -1767330556684
+      description: ""
+  - name: Validation-Demo
+    meta:
+      id: fld_65e7a915225345eaaccf5f9296ba74c9
+      created: 1767588993398
+      modified: 1768303356287
+      sortKey: -1767588993398
+      description: ""
+  - name: Spring AI
+    meta:
+      id: fld_fd1f0a0744f34a43aab1f255feab32e6
+      created: 1768223340152
+      modified: 1768223340152
+      sortKey: -1768223340152
+      description: ""
+  - name: RestClient
+    meta:
+      id: fld_e51a3c62f8b34cdf9c80f28762aea31a
+      created: 1768224467300
+      modified: 1772282624717
+      sortKey: -1768224467300
+      description: ""
+  - name: OpenAI
+    meta:
+      id: fld_fd9a83ec4fee4237b9056f2d292a1e55
+      created: 1772282632897
+      modified: 1772544553196
+      sortKey: -1772282632897
+      description: ""
+    children:
+      - name: ChatMemory
+        meta:
+          id: fld_4511e06c58104c459c09fc6106a5f2e2
+          created: 1772963232029
+          modified: 1772963232029
+          sortKey: -1772963232029
+          description: ""
+  - name: BTOP
+    meta:
+      id: fld_8c76f19e9cd6448f8a10fe4b57329b05
+      created: 1776069936619
+      modified: 1776070863711
+      sortKey: -1776069936619
+      description: ""
+    children:
+      - url: http://localhost:8080/api/v1/tasks
+        name: CREATE TASK Request
+        meta:
+          id: req_01100b0a81d9480e9a5df601f684051a
+          created: 1776069942510
+          modified: 1776595842233
+          isPrivate: false
+          description: ""
+          sortKey: -1776069942510
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "title": "q1234",
+            	"description": "rcSAuhcb8ybvjjdbnc",
+              "status": "IN_PROGRESS",
+            	"userId": 4
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/v1/tasks/5
+        name: GET TASK
+        meta:
+          id: req_fd03bcc06b6e4f80a52ccd5e152c84ea
+          created: 1776070874180
+          modified: 1776077415965
+          isPrivate: false
+          description: ""
+          sortKey: -1774731448193
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/v1/tasks/11
+        name: DELETE TASK
+        meta:
+          id: req_0394b83ec78941f8b96438948d75c8f0
+          created: 1776071139353
+          modified: 1776595949628
+          isPrivate: false
+          description: ""
+          sortKey: -1774062201034.5
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/v1/tasks/1
+        name: Update Task Details
+        meta:
+          id: req_03c9630fb6d04b01afe72fabfda1b11a
+          created: 1776071247684
+          modified: 1776595869894
+          isPrivate: false
+          description: ""
+          sortKey: -1775400695351.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "title": "Complete Spring Boot Project - Updated",
+              "description": "Add security + docker",
+              "status": "COMPLETED",
+              "userId": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/v1/tasks/user/16
+        name: GET ALL TASK of USER
+        meta:
+          id: req_7449ee7c381e4d7e9c28c20501358da1
+          created: 1776077043964
+          modified: 1776595958314
+          isPrivate: false
+          description: ""
+          sortKey: -1774396824613.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/v1/tasks/bulk
+        name: CREATE Request - BULK
+        meta:
+          id: req_2429e417299544ba9c88dbfd8cb6a29e
+          created: 1776079672385
+          modified: 1776079725458
+          isPrivate: false
+          description: ""
+          sortKey: -1775735318930.75
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            [
+              {
+                "title": "Task-001",
+                "description": "Complete backend API development",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-002",
+                "description": "Fix login authentication issue",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-003",
+                "description": "Write unit test cases for services",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-004",
+                "description": "Implement pagination in APIs",
+                "status": "COMPLETED",
+                "userId": 4
+              },
+              {
+                "title": "Task-005",
+                "description": "Refactor service layer logic",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-006",
+                "description": "Add validation for DTOs",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-007",
+                "description": "Fix production bug in task module",
+                "status": "COMPLETED",
+                "userId": 4
+              },
+              {
+                "title": "Task-008",
+                "description": "Improve logging for debugging",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-009",
+                "description": "Optimize database queries",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-010",
+                "description": "Implement exception handling",
+                "status": "COMPLETED",
+                "userId": 4
+              },
+              {
+                "title": "Task-011",
+                "description": "Add Swagger documentation",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-012",
+                "description": "Integrate frontend with backend",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-013",
+                "description": "Setup CI/CD pipeline",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-014",
+                "description": "Write integration test cases",
+                "status": "COMPLETED",
+                "userId": 4
+              },
+              {
+                "title": "Task-015",
+                "description": "Improve API performance",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-016",
+                "description": "Add role-based access control",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-017",
+                "description": "Fix memory leak issue",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              },
+              {
+                "title": "Task-018",
+                "description": "Implement caching with Redis",
+                "status": "COMPLETED",
+                "userId": 4
+              },
+              {
+                "title": "Task-019",
+                "description": "Add audit logging",
+                "status": "TODO",
+                "userId": 4
+              },
+              {
+                "title": "Task-020",
+                "description": "Prepare deployment documentation",
+                "status": "IN_PROGRESS",
+                "userId": 4
+              }
+            ]
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: USER
+        meta:
+          id: fld_ade2e2b02c584c4fa7f8f3f736be4820
+          created: 1776072389202
+          modified: 1776072389202
+          sortKey: -1776072389202
+          description: ""
+        children:
+          - url: http://localhost:8080/api/v1/users
+            name: Create User
+            meta:
+              id: req_6f2b3a8350c94438abe041c5ab037d12
+              created: 1776072391962
+              modified: 1776595831746
+              isPrivate: false
+              description: ""
+              sortKey: -1776072391962
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	
+                	"username": "Raghav",
+                	"password": "ramn1243",
+                	"role": "User"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.5.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_664b8411453c2edfab548ff16948bf9f18fe2c59
+    created: 1765179176687
+    modified: 1765179176687
+environments:
+  name: Base Environment
+  meta:
+    id: env_664b8411453c2edfab548ff16948bf9f18fe2c59
+    created: 1765179176685
+    modified: 1765179176685
+    isPrivate: false
